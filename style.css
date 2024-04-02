@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: hsl(30, 38%, 92%);
+  }
+
+  #container {
+    height: auto;
+    width: 75vmin;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: relative;
+    top: 20vh;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+  }
+
+  #container #img {
+    height: 450px;
+    width: 50%;
+  }
+  
+  #container #img img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #container #content {
+    height: 450px;
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  p, 
+  span{
+    color: hsl(228, 12%, 48%);
+  }
+
+  p{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 20px;
+  }
+
+  /* -------- Product name and description styling ------- */
+  #product-name{
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+  }
+
+  #product-category{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: hsla(228, 12%, 48%, 0.678)
+  }
+
+  /* -----------  button styling  ------------ */
+  #add-to-cart-btn{
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  #add-to-cart-btn:hover{
+    background-color: hsl(159, 35%, 22%);
+  }
+
+  #add-to-cart-btn img{
+    margin-right: 5px;
+  }
+
+  /* -----------  price tag styling  -------------- */
+  #price-tag{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #price-tag h1{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+  }
+
+  #price-tag span{
+    font-size: 0.9rem;
+  }
+
+  /* -----------  styling for attribution  ----------------- */
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media only screen and (max-width: 620px){
+    #container{
+      flex-direction: column;
+      width: 85%;
+      top: 5vh;
+    }
+
+    #container #img,
+    #container #content{
+      width: 100%;
+      height: 350px;
+    }
+
+    #container #img{
+      height: 300px;
+    }
+  }
