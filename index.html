@@ -21,11 +21,10 @@
 <body>
   <div id="container" role="product-card-container">
     <div id="img" role="product-image-container">
-      <picture class="product-image">
-        <source media="(max-width: 43rem)" srcset="./images/image-product-mobile.jpg" />
-        <source media="(min-width: 43rem)" srcset="./images/image-product-desktop.jpg" />
-        <img src="images/image-product-mobile.jpg" alt="images of the product" />
-      </picture>
+      <picture>
+        <source media="(max-width: 460px)" srcset="./images/image-product-mobile.jpg">
+        <img src="./images/image-product-desktop.jpg" alt="images of the product">
+    </picture>
     </div>
     <div id="content" role="product-info-container">
       <h1 id="product-category">PERFUME</h1>
