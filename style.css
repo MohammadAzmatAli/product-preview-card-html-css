@@ -122,3 +122,8 @@ img{
         padding: 1.5rem;
     }
 }
+
+.attribution{
+    position: absolute;
+    bottom: 2rem;
+}
